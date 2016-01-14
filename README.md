@@ -1,7 +1,8 @@
 # phoenix-skeleton
 Phoenix で新規プロジェクトを作成した時の初期設定手順
 
-全てのプロジェクトで共通的に設定するとこの設定手順を記載しています。
+全てのプロジェクトで共通の設定手順を記載しています。
+
 
 # 前準備
 ## MySQLの準備
@@ -41,7 +42,7 @@ $ mv errors.po priv/gettext/ja/LC_MESSAGES/
 - config/config.exs にロケールセット
 
 
-## ログのファイル出力
+# ログのファイル出力
 
 - .gitignore
 - config/config.exs
@@ -54,7 +55,7 @@ $ mv errors.po priv/gettext/ja/LC_MESSAGES/
 $ mix deps.get
 ```
 
-## 秘密情報が書かれた config ファイルを読み込み
+# 秘密情報が書かれた config ファイルを読み込み
 
 - .gitignore
 - config/dev.exs
