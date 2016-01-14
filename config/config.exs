@@ -29,6 +29,27 @@ config :phoenix, :generators,
   binary_id: false
 
 
-# gettext
+### gettext
 config :skeleton, Skeleton.Gettext, default_locale: "ja"
+
+### ログのファイル出力
+config :logger,
+backends: [
+  {LoggerFileBackend, :filelog_debug},
+  {LoggerFileBackend, :filelog_info_warn_error},
+]
+
+config :logger, :filelog_debug,
+  path: "logs/debug.log",
+  level: :debug,
+  format:   "$date $time\t[$level]\t$metadata\t$message\n",
+
+  metadata: [:request_id]
+
+config :logger, :filelog_info_warn_error,
+  path: "logs/phoenix.log",
+  level: :info,
+  format:   "$date $time\t[$level]\t$metadata\t$message\n",
+  metadata: [:request_id]
+
 

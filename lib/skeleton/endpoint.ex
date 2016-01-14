@@ -20,7 +20,10 @@ defmodule Skeleton.Endpoint do
   end
 
   plug Plug.RequestId
-  plug Plug.Logger
+
+  #  plug Plug.Logger
+  plug Skeleton.Plug.Logger
+
 
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
