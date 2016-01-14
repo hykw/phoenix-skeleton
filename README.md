@@ -28,3 +28,15 @@ $ mix phoenix.new skeleton --no-brunch --database mysql
 $ mix test
 ```
 
+# エラーメッセージの日本語化
+
+- localeファイル(https://github.com/hykw/phoenix-locale_ja)をセット
+
+```bash
+$ mkdir -p priv/gettext/ja/LC_MESSAGES
+$ wget https://raw.githubusercontent.com/hykw/phoenix-locale_ja/master/ja/LC_MESSAGES/errors.po
+$ mv errors.po priv/gettext/ja/LC_MESSAGES/
+```
+
+- config/config.exs にロケールセット
+

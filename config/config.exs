@@ -27,3 +27,8 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+
+# gettext
+config :skeleton, Skeleton.Gettext, default_locale: "ja"
+
