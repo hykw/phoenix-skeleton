@@ -20,3 +20,11 @@ $ mix archive.install https://github.com/phoenixframework/phoenix/releases/downl
 $ mix phoenix.new skeleton --no-brunch --database mysql
 ```
 
+# DB設定反映
+- config/dev.exs
+- config/test.exs
+
+```bash
+$ mix test
+```
+

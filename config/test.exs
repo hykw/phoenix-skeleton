@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :skeleton, Skeleton.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
-  database: "skeleton_test",
+  username: "testuser",
+  password: "testpass",
+  database: "phoenix_skeleton",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

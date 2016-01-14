@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :skeleton, Skeleton.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
-  database: "skeleton_dev",
+  username: "testuser",
+  password: "testpass",
+  database: "phoenix_skeleton",
   hostname: "localhost",
   pool_size: 10
